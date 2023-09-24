@@ -1,0 +1,45 @@
+site_name: Matt Teeter
+site_author: Matt Teeter
+site_description: >-
+  Matt Teeter's personal 'portfolio' site.
+
+plugins:
+  - git-revision-date-localized
+
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    logo: fontawesome/solid/code
+  favicon: images/favicon.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.sections
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/matt328
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/matt-t-225902252
+
+nav:
+  - About: index.md
+  - Projects:
+      - Triton: triton.md
+      - Bootstrap: bootstrap.md
+      - Cashbox: cashbox.md
