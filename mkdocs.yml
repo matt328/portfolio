@@ -5,6 +5,19 @@ site_description: >-
 
 plugins:
   - git-revision-date-localized
+  - tags
+  - blog:
+      archive: true
+      archive_name: Archive
+      archive_date_format: yyyy
+      categories: true
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
 
 theme:
   name: material
@@ -20,6 +33,7 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
+    - navigation.tabs
 
 extra:
   generator: false
@@ -35,3 +49,4 @@ nav:
       - Triton: triton.md
       - Bootstrap: bootstrap.md
       - Cashbox: cashbox.md
+  - Blag: blog/index.md
