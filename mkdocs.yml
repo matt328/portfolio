@@ -6,7 +6,6 @@ site_description: >-
 plugins:
   - git-revision-date-localized
   - tags
-  - blog
 
 theme:
   name: material
@@ -38,5 +37,3 @@ nav:
       - Triton: triton.md
       - Bootstrap: bootstrap.md
       - Cashbox: cashbox.md
-  - Blog:
-      - blog/index.md
