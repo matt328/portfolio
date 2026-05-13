@@ -35,5 +35,4 @@ nav:
   - About: index.md
   - Projects:
       - Triton: triton.md
-      - Bootstrap: bootstrap.md
       - Cashbox: cashbox.md
